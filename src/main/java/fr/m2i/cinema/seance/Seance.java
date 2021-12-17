@@ -23,5 +23,6 @@ public class Seance {
 	private Date dateDeFin;
 	@DBRef
 	private Film film;
+	@DBRef
 	private Salle salle;
 }
