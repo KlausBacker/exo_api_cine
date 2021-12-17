@@ -2,18 +2,10 @@ package fr.m2i.cinema.cinema;
 
 import java.util.List;
 
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("articles")
+@RequestMapping("cinemas")
 public class CinemaController {
 
 	/**
@@ -47,7 +39,7 @@ public class CinemaController {
 	 * @return String
 	 */
 	@GetMapping("{nom}")
-	public Cinema findBySlug(@PathVariable String nom) {
+	public Cinema findByNom(@PathVariable String nom) {
 		return this.service.findByNom(nom);
 	}
 

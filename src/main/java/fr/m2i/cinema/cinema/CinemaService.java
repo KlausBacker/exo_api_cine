@@ -2,7 +2,6 @@ package fr.m2i.cinema.cinema;
 
 import java.util.List;
 
-
 public class CinemaService {
 
 	/**
@@ -20,7 +19,7 @@ public class CinemaService {
 	}
 
 	/**
-     * Retourner une liste de cinema
+     * Retourner une liste de cinemas
      * @return
      */
     public List<Cinema> findAll() {
